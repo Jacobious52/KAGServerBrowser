@@ -15,11 +15,18 @@ int main( ){
 
 /*-----------------------------------TODO---------------------------------
 
-        Try fix loading avatars when don't have shit as fuck internet
- 
+        {Try fix loading avatars..}
         cache images
  
-    chat log
+        {chat log}
+        async telnet to server ip:port
+ 
+        {pretty things up.}
+        optimize
+        use smaller images for less memory footprint
+ 
+        {async single reload in KServer}
+
  
 
 -------------------------------------------------------------------------*/
