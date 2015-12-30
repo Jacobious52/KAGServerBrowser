@@ -107,6 +107,8 @@ void ofApp::draw()
 
     gui.draw();
 
+	smallFont.drawString("Press 'F' on a server to toggle favourite", 10, gui.find<Listbox>("servers")->pos.y - 10);
+
     if (servers.servers.size() == 0 && ready)
     {
         bigFont.drawString("No Servers Found :(", ofGetWidth()/2 - bigFont.stringWidth("No Servers Found :(")/2, ofGetHeight()/2 - 100);
