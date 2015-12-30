@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		14DD337C6F52BEFF65F0A689 /* KAsyncLoader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CB612128EB46B053D1C5FFFA /* KAsyncLoader.cpp */; };
+		165165EE1C345BA1009B9CB4 /* KRunner.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 165165EC1C345BA1009B9CB4 /* KRunner.cpp */; };
 		16602DCB1DD9264BCA43F5F1 /* KAPI.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0D09D2D91FDA71E63C9CDBE6 /* KAPI.cpp */; };
 		1E2D4162FDAA4BD9926E5A5E /* GConfig.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 74E7CD16E8ED443C8FCAA65B /* GConfig.cpp */; };
 		21E2EACC72DC0C152D66F8D3 /* ServerView.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4E4E948A68A0FBD6B721F149 /* ServerView.cpp */; };
@@ -64,6 +65,8 @@
 		0D09D2D91FDA71E63C9CDBE6 /* KAPI.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = KAPI.cpp; path = src/KAPI.cpp; sourceTree = SOURCE_ROOT; };
 		0D5EECC4F7C2ED12372BB717 /* Listbox.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = Listbox.cpp; path = src/Listbox.cpp; sourceTree = SOURCE_ROOT; };
 		0FD7B3D0559B481A480D61AE /* GArray.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = GArray.cpp; path = src/GArray.cpp; sourceTree = SOURCE_ROOT; };
+		165165EC1C345BA1009B9CB4 /* KRunner.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = KRunner.cpp; sourceTree = "<group>"; };
+		165165ED1C345BA1009B9CB4 /* KRunner.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = KRunner.hpp; sourceTree = "<group>"; };
 		1CB00B92A177631ABE1D5F60 /* Button.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = Button.hpp; path = src/Button.hpp; sourceTree = SOURCE_ROOT; };
 		24D97596124FC0C8E9B4E7AF /* ServerView.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ServerView.hpp; path = src/ServerView.hpp; sourceTree = SOURCE_ROOT; };
 		25890D3626CBA24490204382 /* GDict.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = GDict.h; path = src/GDict.h; sourceTree = SOURCE_ROOT; };
@@ -138,6 +141,8 @@
 		168964BF1C3274AB00E4DB9D /* KAG */ = {
 			isa = PBXGroup;
 			children = (
+				165165EC1C345BA1009B9CB4 /* KRunner.cpp */,
+				165165ED1C345BA1009B9CB4 /* KRunner.hpp */,
 				80C988B59B6633C764986DFC /* CSVReader.cpp */,
 				3913B368827EEF75F846AC50 /* CSVReader.h */,
 				0D09D2D91FDA71E63C9CDBE6 /* KAPI.cpp */,
@@ -254,7 +259,7 @@
 		E4B69B4C0A3A1720003C02F2 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0600;
+				LastUpgradeCheck = 0720;
 			};
 			buildConfigurationList = E4B69B4D0A3A1720003C02F2 /* Build configuration list for PBXProject "KAGServers" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -330,6 +335,7 @@
 				B29084ED373217B513277C78 /* KServerList.cpp in Sources */,
 				32761FA9BC63528D7FD49674 /* Listbox.cpp in Sources */,
 				21E2EACC72DC0C152D66F8D3 /* ServerView.cpp in Sources */,
+				165165EE1C345BA1009B9CB4 /* KRunner.cpp in Sources */,
 				A8B864963F1531322CB787E7 /* UIElement.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -352,6 +358,7 @@
 				CONFIGURATION_BUILD_DIR = "$(SRCROOT)/bin/";
 				COPY_PHASE_STRIP = NO;
 				DEAD_CODE_STRIPPING = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_AUTO_VECTORIZATION = YES;
 				GCC_ENABLE_SSE3_EXTENSIONS = YES;
 				GCC_ENABLE_SUPPLEMENTAL_SSE3_INSTRUCTIONS = YES;
@@ -434,6 +441,7 @@
 				INFOPLIST_FILE = "openFrameworks-Info.plist";
 				INSTALL_PATH = "$(HOME)/Applications";
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = cc.openFrameworks.ofapp;
 				PRODUCT_NAME = "$(TARGET_NAME)Debug";
 				WRAPPER_EXTENSION = app;
 			};
@@ -461,6 +469,7 @@
 				INFOPLIST_FILE = "openFrameworks-Info.plist";
 				INSTALL_PATH = "$(HOME)/Applications";
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = cc.openFrameworks.ofapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 				baseConfigurationReference = E4EB6923138AFD0F00A09F29;
