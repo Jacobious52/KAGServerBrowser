@@ -195,6 +195,7 @@
     <ClInclude Include="src\Image.hpp" />
     <ClInclude Include="src\KAPI.hpp" />
     <ClInclude Include="src\KAsyncLoader.hpp" />
+    <ClInclude Include="src\KRunner.hpp" />
     <ClInclude Include="src\KServer.hpp" />
     <ClInclude Include="src\KServerList.hpp" />
     <ClInclude Include="src\Listbox.hpp" />
@@ -215,6 +216,7 @@
     <ClCompile Include="src\Image.cpp" />
     <ClCompile Include="src\KAPI.cpp" />
     <ClCompile Include="src\KAsyncLoader.cpp" />
+    <ClCompile Include="src\KRunner.cpp" />
     <ClCompile Include="src\KServer.cpp" />
     <ClCompile Include="src\KServerList.cpp" />
     <ClCompile Include="src\Listbox.cpp" />

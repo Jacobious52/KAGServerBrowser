@@ -75,6 +75,9 @@
     <ClInclude Include="src\KServerList.hpp">
       <Filter>src\KAG</Filter>
     </ClInclude>
+    <ClInclude Include="src\KRunner.hpp">
+      <Filter>src\KAG</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\main.cpp">
@@ -129,6 +132,9 @@
       <Filter>src\KAG</Filter>
     </ClCompile>
     <ClCompile Include="src\KServerList.cpp">
+      <Filter>src\KAG</Filter>
+    </ClCompile>
+    <ClCompile Include="src\KRunner.cpp">
       <Filter>src\KAG</Filter>
     </ClCompile>
   </ItemGroup>

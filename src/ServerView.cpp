@@ -7,6 +7,7 @@
 //
 
 #include "ServerView.hpp"
+#include "KRunner.hpp"
 
 void ServerView::update()
 {
@@ -216,6 +217,8 @@ void ServerView::mouseReleased(int x, int y, int button)
 {
     server.timesPlayed++;
     ofLogNotice("ServerView", server.name + " clicked");
+
+	KRunner::run(server.ip, server.port);
 
     UIElement::mouseReleased(x, y, button);
 }
