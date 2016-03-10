@@ -4,8 +4,9 @@ Server browser/launcher for King Arthur's Gold
 Cross platform server browser for the game King Arthur's Gold
 
 [Technical]
-Custom JSON Generics Library for handling server data. See Jacobious52/Json-Generics
-Custom UI controls and UI system build from scratch. Views, Material Style Button, Scrollable Listbox, etc
+- Custom JSON Generics Library for handling server data. See Jacobious52/Json-Generics
+- Custom UI controls and UI system build from scratch. Views, Material Style Button, Scrollable Listbox, etc
+- Openframeworks for rendering and http access
 
 [Preview]
 ![List of servers]
